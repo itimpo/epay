@@ -1,20 +1,23 @@
-# ePay Coding Test
 
-The solution contains 2 projects and test for them
+ # ePay Coding Test
 
-## Denominator Project 
-It's a library with **DenominatorService** that can be used to find all possible combinations for specific amout.
-You can run all test in project **Denominator.Test** to proof required functionality of the service.
+The solution contains two projects and tests for them.
+
+## Denominator Project
+
+The Denominator project is a library that provides the **DenominatorService**. This service can be used to find all possible combinations for a specific amount.
+
+You can run all tests in the **Denominator.Tests** project to validate the required functionality of the service.
 
 ## DtPay Project
-It's a web api project that works with Customers
-When you run this project you can see swagger page where you can check functionality.
-I used **/data.json** file as storage, it contains json objects of customers, and it is loaded on start of application.
-To avoid sorting and to improve performance I used SortedSet collection inside Storage class.
-To validate Customer entities on data submit I used validation attributes and also implemented custom attribute to check unique id.
-Also, I wrote tests for Api, you can run them in **DtPay.Tests** project
 
-*Please note that this is a test project and I have not applied the architecture that I would use for Enterprise applications.  
+The DtPay project is a web API project that manages customers. When you run this project, you can access the Swagger page to check its functionality.
 
-  
- 
+The project use the **/data.json** file as storage, which contains JSON objects of customers. It is loaded on the application's start. Inside the Storage class, a SortedSet collection is used for efficient handling of customer data.
+
+To validate Customer entities during data submission, validation attributes are used, and a custom attribute is implemented to ensure a unique ID.
+
+Tests for the API are available in the **DtPay.Tests** project. Run them to ensure the correctness of the API's functionalities.
+
+
+*Please note that this is a test project, and the architecture applied may not be suitable for Enterprise applications. Consider the following notes on the design.*
